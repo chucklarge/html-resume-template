@@ -1,0 +1,157 @@
+@page {
+  size: US-Letter;
+  margin: 1in .75in .75in .75in;
+  font: 11pt "Euclid";
+
+  @top {
+	  content: string(doctitle);
+    padding:0;
+    margin:0 0 10px 0;
+    vertical-align:bottom;
+    xborder-bottom:1px solid black;
+  }
+
+  @top-right {
+    content: counter(page);
+    margin:0 0 10px 0;
+    vertical-align: bottom;
+    xborder-bottom:1px solid black;
+  }
+}
+
+title {
+  string-set: doctitle content()
+}
+
+/* no header or page number on first page */
+@page:first {
+  margin: .7in .75in;
+  @top {
+    content: none;
+  }
+  @top-right {
+    content: none;
+  }
+}
+
+html {
+  font: 11pt "Euclid";
+  color: black;
+  background: white;
+}
+
+body {
+}
+
+br {
+  clear:both;
+}
+
+h1 {
+  xfont-weight:600;
+  font-size:20pt;
+  letter-spacing:4pt;
+  text-transform:uppercase;
+  border-bottom:1px solid black;
+}
+    h1 span {
+      font-size:25pt;
+    }
+
+h3 {
+  font-weight:900;
+  font-size:12pt;
+  letter-spacing:2pt;
+  text-transform:uppercase;
+  margin-bottom:5px;
+}
+
+p {
+  margin:0 0 .2em 0;
+  text-indent: 1em;
+  line-height: 2em;
+}
+    p.noindent {
+      text-indent:0;
+    }
+
+div.section, .degree {
+  margin-bottom:17px;
+  xbackground-color:PaleTurquoise;
+}
+
+div.content {
+  margin-left:20px;
+}
+
+ul {
+  padding: 0 0 0 17px;
+  list-style-type: disc;
+}
+
+    ul li{
+      padding-bottom:5px;
+
+      xbackground-color:blue;
+    }
+    ul li:last-child {
+      padding:0;
+
+      xbackground-color:red;
+    }
+
+    ul li ul {
+      padding:5px 0 5px 17px;
+      list-style-type: circle;
+    }
+
+table {
+  width: 100%;
+}
+    tr {
+      height: 20px;
+
+      xbackground-color:green;
+    }
+
+    tr:last-child {
+      height: 15px;
+      padding:0;
+      margin:0;
+
+      xbackground-color:yellow;
+    }
+
+    td {
+    }
+
+.overline {
+  border-top: 1px solid black;
+}
+
+.rborder {
+  font-style:italic;
+  text-align: right;
+  border-right: 1px solid black;
+  padding-right: 5px;
+}
+
+.second {
+  padding-left:5px;
+}
+
+.fright {
+  float:right;
+}
+
+.right {
+  text-align:right;
+}
+
+.job {
+  margin-bottom:17px;
+}
+
+.pagebreak {
+  page-break-before: always;
+}
