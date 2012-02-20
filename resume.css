@@ -1,157 +1,142 @@
 @page {
-  size: US-Letter;
-  margin: 1in .75in .75in .75in;
-  font: 11pt "Euclid";
+    size: US-Letter;
+    margin: 1in .75in .75in .75in;
+    font: 11pt "Euclid";
 
-  @top {
-	  content: string(doctitle);
-    padding:0;
-    margin:0 0 10px 0;
-    vertical-align:bottom;
-    xborder-bottom:1px solid black;
-  }
+    @top {
+        content: string(doctitle);
+        padding:0;
+        margin:0 0 10px 0;
+        vertical-align:bottom;
+    }
 
-  @top-right {
-    content: counter(page);
-    margin:0 0 10px 0;
-    vertical-align: bottom;
-    xborder-bottom:1px solid black;
-  }
+    @top-right {
+        content: counter(page);
+        margin:0 0 10px 0;
+        vertical-align: bottom;
+    }
 }
 
 title {
-  string-set: doctitle content()
+    string-set: doctitle content()
 }
 
 /* no header or page number on first page */
 @page:first {
-  margin: .7in .75in;
-  @top {
-    content: none;
-  }
-  @top-right {
-    content: none;
-  }
+    margin: .7in .75in;
+    @top {
+        content: none;
+    }
+    @top-right {
+        content: none;
+    }
 }
 
 html {
-  font: 11pt "Euclid";
-  color: black;
-  background: white;
-}
-
-body {
+    font: 11pt "Euclid";
+    color: black;
+    background: white;
 }
 
 br {
-  clear:both;
+    clear:both;
 }
 
 h1 {
-  xfont-weight:600;
-  font-size:20pt;
-  letter-spacing:4pt;
-  text-transform:uppercase;
-  border-bottom:1px solid black;
+    font-size:20pt;
+    letter-spacing:4pt;
+    text-transform:uppercase;
+    border-bottom:1px solid black;
 }
+
     h1 span {
-      font-size:25pt;
+        font-size:25pt;
     }
 
 h3 {
-  font-weight:900;
-  font-size:12pt;
-  letter-spacing:2pt;
-  text-transform:uppercase;
-  margin-bottom:5px;
+    font-weight:900;
+    font-size:12pt;
+    letter-spacing:2pt;
+    text-transform:uppercase;
+    margin-bottom:5px;
 }
 
 p {
-  margin:0 0 .2em 0;
-  text-indent: 1em;
-  line-height: 2em;
+    margin:0 0 .7em 0;
+    line-height: 2em;
 }
-    p.noindent {
-      text-indent:0;
+    p.salutation {
+        margin:3em 0 1.0em 0;
     }
 
 div.section, .degree {
-  margin-bottom:17px;
-  xbackground-color:PaleTurquoise;
+    margin-bottom:17px;
 }
 
 div.content {
-  margin-left:20px;
+    margin-left:20px;
 }
 
 ul {
-  padding: 0 0 0 17px;
-  list-style-type: disc;
+    padding: 0 0 0 17px;
+    list-style-type: disc;
 }
 
     ul li{
-      padding-bottom:5px;
-
-      xbackground-color:blue;
+        padding-bottom:5px;
     }
-    ul li:last-child {
-      padding:0;
 
-      xbackground-color:red;
+    ul li:last-child {
+        padding:0;
     }
 
     ul li ul {
-      padding:5px 0 5px 17px;
-      list-style-type: circle;
+        padding:5px 0 5px 17px;
+        list-style-type: circle;
     }
 
 table {
-  width: 100%;
+    width: 100%;
 }
-    tr {
-      height: 20px;
 
-      xbackground-color:green;
-    }
+tr {
+    height: 20px;
+}
 
     tr:last-child {
-      height: 15px;
-      padding:0;
-      margin:0;
-
-      xbackground-color:yellow;
-    }
-
-    td {
-    }
+        height: 15px;
+        padding:0;
+        margin:0;
+       }
 
 .overline {
-  border-top: 1px solid black;
+    border-top: 1px solid black;
 }
 
 .rborder {
-  font-style:italic;
-  text-align: right;
-  border-right: 1px solid black;
-  padding-right: 5px;
+    font-style:italic;
+    text-align: right;
+    border-right: 1px solid black;
+    padding-right: 5px;
 }
 
 .second {
-  padding-left:5px;
+    padding-left:5px;
 }
 
 .fright {
-  float:right;
+float:right;
 }
 
 .right {
-  text-align:right;
+    text-align:right;
 }
 
 .job {
-  margin-bottom:17px;
+    margin-bottom:17px;
 }
 
 .pagebreak {
-  page-break-before: always;
+    page-break-before: always;
 }
+
