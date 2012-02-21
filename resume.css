@@ -66,12 +66,25 @@ p {
     line-height: 2em;
 }
     p.salutation {
-        margin:3em 0 1.0em 0;
+        margin:0 0 1.0em 0;
     }
 
-div.section, .degree {
+    p.valediction {
+        margin:2em 0 0 0;
+    }
+
+div.section {
+    padding: 1px 0;
     margin-bottom:17px;
 }
+
+.list {
+    margin-bottom:17px;
+}
+
+    .list:last-child {
+        margin-bottom:0;
+    }
 
 div.content {
     margin-left:20px;
@@ -95,6 +108,10 @@ ul {
         list-style-type: circle;
     }
 
+    ul li ul:last-child {
+        padding:5px 0 0 17px;
+    }
+
 table {
     width: 100%;
 }
@@ -108,6 +125,19 @@ tr {
         padding:0;
         margin:0;
        }
+
+table.references tr td {
+    width: 33%;
+    padding-bottom: 20px;
+}
+
+table.references tr:last-child td {
+    padding-bottom: 0;
+}
+
+table.references tr:last {
+    padding:0;
+}
 
 .overline {
     border-top: 1px solid black;
@@ -132,9 +162,6 @@ float:right;
     text-align:right;
 }
 
-.job {
-    margin-bottom:17px;
-}
 
 .pagebreak {
     page-break-before: always;
