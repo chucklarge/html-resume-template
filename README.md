@@ -6,7 +6,7 @@ Prince is an amazing tool that converts html to PDFs. Since my goal is a printed
 
 Prince puts a watermark on the top right corner of the first page if you do not have a license. This watermark is non-printing, so print to PDF may be helpful to you (hint hint).
 
-Sample Usage (inside the samples directory)
+Sample Prince Usage (inside the samples directory)
 
     [path]/prince -v -ihtml resume.html -o resume.pdf
     [path]/prince -v -ihtml coverletter.html -o coverletter.pdf
