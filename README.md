@@ -13,8 +13,8 @@ Sample Usage (inside the samples directory)
 
 Special Thanks
 
-- http://jblevins.org/projects/cv-template
-- http://www.princexml.com
-- http://www.fontyukle.net/en/DownLoad-euclid.ttf
-- http://meyerweb.com/eric/tools/css/reset
-- http://www.dack.com/web/bullshit.html
+1. http://jblevins.org/projects/cv-template
+2. http://www.princexml.com
+3. http://www.fontyukle.net/en/DownLoad-euclid.ttf
+4. http://meyerweb.com/eric/tools/css/reset
+5. http://www.dack.com/web/bullshit.html
