@@ -12,8 +12,9 @@ Sample Usage (inside the samples directory)
     [path]/prince -v -ihtml coverletter.html -o coverletter.pdf
 
 Special Thanks
-# http://jblevins.org/projects/cv-template
-# http://www.princexml.com
-# http://www.fontyukle.net/en/DownLoad-euclid.ttf
-# http://meyerweb.com/eric/tools/css/reset
-# http://www.dack.com/web/bullshit.html
+
+- http://jblevins.org/projects/cv-template
+- http://www.princexml.com
+- http://www.fontyukle.net/en/DownLoad-euclid.ttf
+- http://meyerweb.com/eric/tools/css/reset
+- http://www.dack.com/web/bullshit.html
